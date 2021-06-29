@@ -1,21 +1,23 @@
 .header {
-    background-color: rgb(208, 247, 245);
+    background-color: rgb(223, 235, 247);
     font-size: large;
     padding: 20px;
 }
 
 .header-link {
     float: right;
-    font-size:x-small;
+    font-size:small;
 }
 
 .content {
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
     align-content: center;
 }
 
 .left {
+    display: -webkit-flex;
     display: flex;
     width: 620px;
     height: 420px;
@@ -45,23 +47,72 @@
 .right {
     display: flex;
     width: 700px;
-    height: 500px;
+    height: 650px;
     justify-content: center;
 }
 
 .login-box {
     width: 300px;
     border-style: solid;
-    border-color: cornflowerblue;
+    border-color: gray;
+    border-width: 1px;
     border-radius: 10px;
     padding: 20px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
+.login-tab {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: -21px -21px 0px -21px;
+    font-size: 16px;
+}
+
+.login-info {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.input {
+    border-radius: 2px;
+    border-color: gray;
+    border-width: 1px;
+    font-size: 16px;
+    height: 45px;
+}
+
+.button {
+    text-align: center;
+}
+
+.login-button {
+    margin-top: 15px;
+    margin-bottom: 100px;
+    background-color: rgb(109, 146, 224);
+    font-size: 20px;
+    width: 290px;
+    color: white;
+}
+
+.options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer {
-    font-size: x-small;
-    background-color: rgb(208, 247, 245);
+    font-size: small;
+    background-color: rgb(223, 235, 247);
     text-align: center;
     padding: 10px;
 }
