@@ -35,6 +35,11 @@
     justify-content: left;
 }
 
+.welcome-content {
+    font-size: 13px;
+    color: black;
+    font-weight: lighter;
+}
 
 .picture-display {
     margin-top: 50px;
