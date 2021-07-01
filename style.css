@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     background-color: rgb(223, 235, 247);
     font-size: large;
@@ -18,20 +23,21 @@
 
 .left {
     display: flex;
-    width: 620px;
+    width: 50%;
     height: 420px;
     background: white;
     justify-content:space-evenly;
 }
 
 .welcome-message {
-    margin-left: 160px;
-    margin-top: 50px;
+    margin: 50px 0 0 160px;
     font-size: 20px;
     color: rgb(93, 139, 224);
     font-weight: bold;
-    padding: 20px;
-    justify-content: left;
+}
+
+.welcome-content p {
+    padding: 3px;
 }
 
 .welcome-content {
@@ -41,16 +47,13 @@
 }
 
 .picture-display {
-    margin-top: 50px;
     width: 20px;
-    height: 50px;
-    justify-content: space-around;
     padding: 100px;
 }
 
 .right {
     display: flex;
-    width: 700px;
+    width: 50%;
     height: 650px;
     justify-content: center;
 }
