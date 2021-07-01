@@ -50,7 +50,7 @@
                             <li>
                                 <input type="radio" name="check" id="active2" style="display: none;" checked><label for="active2">QQ登陆</label>
                                 <div>
-                                    <form method="POST">
+                                    <form method="POST" action="login.html">
                                         <div class="login-info">
                                             <input class="input" id="userName" type="text" placeholder=" 支持QQ/邮箱/手机登陆">
                                             <input class="input" id="userPassword" type="password" placeholder=" QQ密码"> 
@@ -58,7 +58,7 @@
                                         
                                         <input type="checkbox" value="auto-login">下次自动登录
                                         <div class="button">
-                                            <input class="login-button" type="submit" value="登 陆" onclick=" return login()">
+                                            <input class="login-button" type="submit" value="登 陆" onclick="login()">
                                         </div>
                                     </form>
 
