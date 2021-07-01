@@ -35,31 +35,38 @@
             </div>
             <div class="right">
                 <div class="login-box">
-                    <div class="login-tab">
-                        <!-- <span class="wechat-login">微信登录</span>
-                        <span class="qq-login">QQ登陆</span> -->
+                    <div class="login-tab" style="color: gray;">
                         <ul>
-                            <li class="wechat-login">
-                                微信登录
+                            <li>
+                                <input type="radio" name="check" id="active1" style="display: none;"><label for="active1">微信登陆</label>
+                                <div class="wechat-qrcode">
+                                    <img src="https://img0.baidu.com/it/u=1752649881,2569983997&fm=26&fmt=auto&gp=0.jpg" alt="QR code" height="200px" width="200px">
+                                    <p>请使用微信扫描二维码登陆</p>
+                                    <input type="checkbox">下次自动登录
+                                    <br><br><br>
+                                    <p>微信与QQ账号的邮箱数据不互通</p>
+                                </div>
                             </li>
-                            <li class="qq-login">
-                                QQ登陆
+                            <li>
+                                <input type="radio" name="check" id="active2" style="display: none;" checked><label for="active2">QQ登陆</label>
+                                <div>
+                                    <div class="login-info">
+                                        <input class="input" type="text" placeholder=" 支持QQ/邮箱/手机登陆">
+                                        <input class="input" type="password" placeholder=" QQ密码">
+                                    </div>
+                                    
+                                    <input type="checkbox" value="auto-login">下次自动登录
+                                    <div class="button">
+                                        <button class="login-button" value="登陆">登 陆</button>
+                                    </div>
+
+                                    <div class="options">
+                                        <a href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account"> 忘记密码</a>
+                                        <a href="http://zc.qq.com/chs/index.html?type=1">注册新账号</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                    </div>
-                    <br>
-                    <div class="login-info">
-                        <input class="input" type="text" placeholder="支持QQ/邮箱/手机登陆">
-                        <input class="input" type="text" placeholder="QQ密码">
-                    </div>
-                    
-                    <input type="checkbox" value="auto-login">下次自动登录
-                    <div class="button">
-                        <button class="login-button" value="登陆">登 陆</button>
-                    </div>
-                    <div class="options">
-                        <a href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account"> 忘记密码</a>
-                        <a href="http://zc.qq.com/chs/index.html?type=1">注册新账号</a>
                     </div>
                 </div>
             </div>
