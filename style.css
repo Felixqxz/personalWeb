@@ -6,7 +6,7 @@
 
 .header-link {
     float: right;
-    font-size:small;
+    font-size: small;
 }
 
 .content {
@@ -17,7 +17,6 @@
 }
 
 .left {
-    display: -webkit-flex;
     display: flex;
     width: 620px;
     height: 420px;

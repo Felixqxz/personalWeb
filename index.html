@@ -91,5 +91,14 @@
        </div>
         
     </body>
-    <script type="text/javascript" src="homepage.js"></script>
+    <script type="text/javascript">
+        function login() {
+        var userName = document.getElementById("userName").value;
+        var userPassword = document.getElementById("userPassword").value;
+        console.log("jump");
+        // alert("提交成功" + "\n 用户名：" + userName + "\n密码: " + userPassword);
+        window.localStorage.setItem("userName", userName);
+        window.localStorage.setItem("userPassword", userPassword);
+    }
+    </script>
 </html>

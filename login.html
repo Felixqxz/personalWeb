@@ -2,11 +2,20 @@
 <html>
     <meta charset="UTF-8">
     <head>
+        <script type="text/javascript">
+            function getUserName() {
+                var userName  = window.localStorage.getItem("userName");
+                document.getElementById("userName").innerHTML = '用户名：' + userName
+            }
+            function getUserPassword() {
+                var userPassword  = window.localStorage.getItem("userPassword");
+                document.getElementById("userPassword").innerHTML = '密码: ' + userPassword
+            }
 
+        </script>
     </head>
-    <body>
-        <script type="text/javascript" src="homepage.js">getUserName()</script>
-        <script type="text/javascript" src="homepage.js">getUserPassword()</script>
+    <body onload="getUserName(); getUserPassword();">
+        <div id="userName"></div>
+        <div id="userPassword"></div>
     </body>
-    <script type="text/javascript" src="homepage.js"></script>
 </html>
