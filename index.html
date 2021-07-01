@@ -50,15 +50,17 @@
                             <li>
                                 <input type="radio" name="check" id="active2" style="display: none;" checked><label for="active2">QQ登陆</label>
                                 <div>
-                                    <div class="login-info">
-                                        <input class="input" type="text" placeholder=" 支持QQ/邮箱/手机登陆">
-                                        <input class="input" type="password" placeholder=" QQ密码">
-                                    </div>
-                                    
-                                    <input type="checkbox" value="auto-login">下次自动登录
-                                    <div class="button">
-                                        <button class="login-button" value="登陆">登 陆</button>
-                                    </div>
+                                    <form method="POST">
+                                        <div class="login-info">
+                                            <input class="input" id="userName" type="text" placeholder=" 支持QQ/邮箱/手机登陆">
+                                            <input class="input" id="userPassword" type="password" placeholder=" QQ密码"> 
+                                        </div>
+                                        
+                                        <input type="checkbox" value="auto-login">下次自动登录
+                                        <div class="button">
+                                            <input class="login-button" type="submit" value="登 陆" onclick=" return login()">
+                                        </div>
+                                    </form>
 
                                     <div class="options">
                                         <a href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account"> 忘记密码</a>
